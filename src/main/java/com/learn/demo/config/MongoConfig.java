@@ -20,7 +20,7 @@ public class MongoConfig {
         return MongoClients.create(MongoClientSettings
                 .builder()
                 //链接地址
-                .applyConnectionString(new ConnectionString("mongodb://192.168.33.102:37017"))
+                .applyConnectionString(new ConnectionString("mongodb://10.10.10.102:37017"))
                 //用户名密码
                 .credential(MongoCredential.createCredential("test", "test", "123456".toCharArray()))
                 .build());
